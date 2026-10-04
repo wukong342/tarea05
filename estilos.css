@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    color: white;
+
+}
+
+
+#contenedor {
+    width: 100%;
+    margin: 5px;
+    border: 2px solid #ffe81f;
+    height: 1400px;
+    background-image: url(imagenes/luke.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#cabecera {
+    /*aplicando flexbox*/
+    height: 100;
+    background-color: bisque;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*posicionamiento fijo*/
+    position: fixed;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    background-image: url(imagenes/espacio.jpg);
+    text-decoration: underline;
+
+}
+
+#titulo {
+    padding: 10px;
+    margin-right: 5px;
+    height: 100%;
+    font-family: helvetica;
+    font-style: italic;
+    text-transform: uppercase;
+    /*cambia las letras a mayusculo*/
+    width: 40%;
+
+}
+
+h1 {
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+#titulo h2 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+#menu {
+    width: 60%;
+}
+
+#menu ul {
+    list-style-type: none;
+    /*retira o elimina viñetas*/
+    display: flex;
+    /*flexbox para menu*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#menu a {
+    padding: 10px;
+    text-transform: uppercase;
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+/*la seudo clase hover*/
+#menu a:hover {
+    background-color: dimgrey;
+    color: white;
+
+}
+
+#contenido {
+    scroll-behavior: smooth;
+    margin-left: 20px;
+    margin-top: 120px;
+    /*bajar 100px para dejar la cabecera */
+}
+
+
+
+#logo {
+    width: 20%;
+
+}
+
+#logo img {
+    width: 100%;
+    margin: 40px;
+    filter: drop-shadow(0px 0px 8px #FFE81F);
+}
+
+#seccion {
+    width: 100%;
+}
+
+#seccion h3 {
+    text-decoration: underline;
+    margin-left: 0;
+
+}
+
+.articulo {
+    margin-top: 20px;
+    margin-bottom: 300px;
+    scroll-margin-top: 120px;
+
+}
